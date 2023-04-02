@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Movie Info</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      
+      h1 {
+        margin-top: 0;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        font-size: 16px;
+      }
+      
+      button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Movie Info</h1>
+    <form>
+      <label for="movieTitle">Enter a movie title:</label>
+      <input type="text" id="movieTitle" name="movieTitle">
+      <button type="submit" id="submitBtn">Get Movie Info</button>
+    </form>
+    
+    <div id="movieInfo"></div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
